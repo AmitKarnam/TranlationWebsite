@@ -1,16 +1,65 @@
 *{
   box-sizing: border-box;
-  font-family: cursive;  
+  font-family: cursive;
+  
+}
+
+.start{
+  background-color: #000080;
+  padding: 5px;
+  color: white
 }
 
 .textareaHeading{
-    font-size: large;
-    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
 }
 
 #englishText , #convertedText{
-    width: 60%;
+    background-color: white;
+    width: 40%;
     height: 30vh;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.headingBar{
+    padding: 0px;
+    margin: 0;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+#headingBarImageLeft{
+  width: 100px;
+  height: 100px;
+  float:left;
+  border-radius: 50%;
+}
+
+#headingBarImageRight{
+  width: 100px;
+  height: 100px;
+  float:right;
+  border-radius: 50%;
+}
+
+#Submitbtn{
+  padding: 0.4%;
+  font-weight: bold;
+  width: 10%;
+  background-color: #000080;;
+  cursor: pointer;
+  color: white;
+}
+
+
+
 
 
