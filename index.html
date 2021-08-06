@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translation</title>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
 
@@ -27,51 +28,7 @@
         </textarea>
     </div>
 
+    <script src="app.js" type="text/javascript"></script>
 </body>
-
-<script>
-
-
-
-function createUrl(text)
-{
-    var url = 'https://api.funtranslations.com/translate/shakespeare.json?' + "text=" + text
-    return url
-}
-
-
-function errorHandler(error)
-{
-    console.log("error occured",error);
-    alert("something went wrong, please try after sometime.");
-}
-
-
-function fetchJson()
-{
-    
-    englishText = document.querySelector("#englishText");
-    
-    fetch(createUrl(englishText.value)).then(response => response.json()).then(json => {
-       var translatedText = json.contents.translated;
-       
-        outputArea = document.querySelector("#convertedText");
-        outputArea.innerHTML = translatedText;
-    })
-    .catch(errorHandler)
-
-   
-}
-
-const btn = document.querySelector("#Submitbtn");
-
-btn.addEventListener('click',function(event)
-{
-    console.log("Button clicked.");
-    fetchJson();
-});
-
-
-</script>
 
 </html>
