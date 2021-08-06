@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  font-family: cursive;  
+}
+
+.textareaHeading{
+    font-size: large;
+    font-weight: bold;
+}
+
+#englishText , #convertedText{
+    width: 60%;
+    height: 30vh;
+}
+
+
